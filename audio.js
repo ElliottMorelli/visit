@@ -36,6 +36,9 @@ async function playFarAwayAudio(){
 
     globalGain = audioCtx.createGain();
     globalGain.gain.value = 0.02;
+  
+    var globalGain2 = audioCtx.createGain();
+    globalGain2.gain.value = 0.5;
 
     bikeSource = await loadBuffer('./samples/bicyclette.mp3');
     source = audioCtx.createBufferSource();
@@ -63,7 +66,7 @@ async function playFarAwayAudio(){
     source.connect(dry).connect(lowpass).connect(globalGain).connect(audioCtx.destination);
     source.connect(biquadFilter);
     //lowpass.connect(biquadFilter);
-    biquadFilter.connect(reverb).connect(wet).connect(globalGain).connect(audioCtx.destination); 
+    biquadFilter.connect(reverb).connect(wet).connect(globalGain).connect(globalGain2).connect(audioCtx.destination); 
 
 }
 
