@@ -1,0 +1,60 @@
+<head>
+    <style>
+        .background {
+                width: 100vw;
+                height: 100vh;
+                position: fixed;
+                top: -10;
+                left: 0;
+                z-index: -20;
+            }
+            #btm_layer {
+                position:absolute;
+                top: 690px;
+                left: 367px;
+                z-index: 1;
+                height: 21%;
+                visibility:hidden;
+
+            }
+            .top_layer {
+                
+                position:absolute;
+                top: 10px;
+                left: 200px;
+                z-index: 2;
+                width: 80%;
+    
+            }
+            .center {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                width: 80%;
+                
+            }
+            #bowl_open {
+                visibility: hidden;
+                z-index: 3;
+            }
+            .clickable:hover {
+                cursor: pointer;
+            }
+    </style>
+    <script src="controls.js"></script>
+
+</head>
+<body  style="background-color: #Edd9d4;">
+    <img id="btm_layer" src="./images/toilet_gif.gif" alt="hot singles in your area" /> 
+    <img class="top_layer" id="bowl_closed" src="./images/bowl_closed.jpg" alt="bathroom with toilet closed." usemap="#toilet">
+
+
+    <map name = "toilet">
+        <area  shape = "square" class="clickable" coords = "10,500,400,800" alt = "toilet"  onclick="changeImage()" target = "_blank" />
+        <area  shape = "square" coords = "1000,10,1300,750" alt = "mirror" class="clickable" href="./mirror.html" target = "_blank" />
+        <area shape = "square" class="clickable" coords ="40,550,600,800" href="./doorways.html"/>
+     </map>
+     <script>
+         
+     </script>
+</body>

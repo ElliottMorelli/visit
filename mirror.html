@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <style>
+            .btm_layer {
+                
+                position:absolute;
+                top: 0px;
+                left: 200px;
+                z-index: 1;
+                width: 80%;
+    
+            }
+            .clickable:hover {
+                cursor: pointer;
+            }
+            .top_layer {
+                
+                position:absolute;
+                top: 40px;
+                left: 550px;
+                z-index: 2;
+                width: 50%;
+    
+            }
+            #question{
+                opacity: 0;
+            }
+            
+        </style>
+        <script src="./controls.js"></script>
+
+    </head>
+    <body style="background-color: #Edd9d4;">
+        <img id="mirror" class="btm_layer" src="./images/mirror.jpg" usemap="#mirrors">
+        <img id="question" class="top_layer" src="./images/whatami.png" usemap="#mirrors">
+
+        <map name = "mirrors">
+            <area  shape = "square" class="clickable" coords = "150,20,800,800" alt = "mirror"  onclick="changeMirror()" target = "_blank" />
+            <area  shape = "square" coords = "10,500,600,750" alt = "back" class="clickable" href="./bathroom.html" target = "_blank" />
+         </map>
+
+    </body>
+</html>
