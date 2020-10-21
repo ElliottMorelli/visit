@@ -42,7 +42,7 @@ async function playFarAwayAudio(){
 
     bikeSource = await loadBuffer('./samples/bicyclette.mp3');
     source = audioCtx.createBufferSource();
-    source.connect(globalGain).connect(audioCtx.destination);
+    source.connect(globalGain2).connect(audioCtx.destination);
     source.buffer = bikeSource;
     source.start();
 
