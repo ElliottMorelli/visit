@@ -38,7 +38,7 @@ async function playFarAwayAudio(){
     globalGain.gain.value = 0.02;
   
     var globalGain2 = audioCtx.createGain();
-    globalGain2.gain.value = 0.5;
+    globalGain2.gain.value = 0.05;
 
     bikeSource = await loadBuffer('./samples/bicyclette.mp3');
     source = audioCtx.createBufferSource();
