@@ -54,6 +54,20 @@ function changeMirror(){
 
 }
 
+function enterVoid(){
+    window.location.href = "./paranoia.html";
+
+}
+
+function fallThrough(){
+    window.location.href = "./void.html";
+
+}
+
+function toDoorways(){
+    window.location.href = "./doorways.html";
+}
+
 function fadeIn() { 
     var fade = document.getElementById("question"); 
     var opacity2 = 0; 
