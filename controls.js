@@ -82,19 +82,6 @@ function fadeIn() {
     }, 200); }
     
 
-const security_no = document.getElementById('no_risk');
-const security_yes = document.getElementById('yes_risk');
-
-
-security_no.addEventListener('click', function() { 
-        window.location.href = "./doorways.html";
-
-    });
-
-security_yes.addEventListener('click', function() { 
-        toDoorways();
-
-    });
 
  
 
