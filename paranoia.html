@@ -32,6 +32,9 @@
                 margin-left: -250px; 
                 /* Half the width */
             }
+            .clickable:hover {
+                cursor: pointer;
+            }
             
         </style>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
@@ -58,14 +61,14 @@
             <div class='row mt-3'>
             <div class='col-sm-6 p-3 mt-3'>
                 <div class="container p-3">
-                    <img src="./images/security_yes.png" id='yes_risk' alt="i am a security risk" usemap="#paramap">
+                    <img src="./images/security_yes.png" id='yes_risk' class="clickable" alt="i am a security risk" usemap="#paramap">
                 </div>
              
                 
         </div>
             <div class= 'col-sm-6 p-3 mt-3'>
                 <div class="container mt-5 pt-5">
-                    <img src="./images/security_no.png" id='no_risk' alt="i am not a security risk" usemap="#paramap">
+                    <img src="./images/security_no.png" id='no_risk' class="clickable" alt="i am not a security risk" usemap="#paramap">
 
                 </div>
                 
