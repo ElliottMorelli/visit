@@ -80,22 +80,6 @@ function fadeIn() {
             clearInterval(intervalID); 
         } 
     }, 200); }
-
-
-document.addEventListener("DOMContentLoaded", function(event) {
-    
-    if(window.location.href == "./index.html"){
-        const enter = document.getElementById('enter');
-
-        enter.addEventListener('click', function() { 
-            window.location.href = "./doorways.html";
-
-        });
-    }
-
-});
-
-
     
 
 const security_no = document.getElementById('no_risk');
