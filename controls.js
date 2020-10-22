@@ -81,14 +81,20 @@ function fadeIn() {
         } 
     }, 200); }
 
-if(window.location.href == "./index.html"){
-    const enter = document.getElementById('enter');
-    
-    enter.addEventListener('click', function() { 
-        window.location.href = "./doorways.html";
 
-    });
-}
+document.addEventListener("DOMContentLoaded", function(event) {
+    
+    if(window.location.href == "./index.html"){
+        const enter = document.getElementById('enter');
+
+        enter.addEventListener('click', function() { 
+            window.location.href = "./doorways.html";
+
+        });
+    }
+
+});
+
 
     
 
@@ -97,7 +103,7 @@ const security_yes = document.getElementById('yes_risk');
 
 
 security_no.addEventListener('click', function() { 
-        toDoorways();
+        window.location.href = "./doorways.html";
 
     });
 
