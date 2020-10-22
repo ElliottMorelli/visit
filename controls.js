@@ -88,5 +88,19 @@ function fadeIn() {
 
     });
 
+const security_no = document.getElementById('no_risk');
+const security_yes = document.getElementById('yes_risk');
+
+
+security_no.addEventListener('click', function() { 
+        toDoorways();
+
+    });
+
+security_yes.addEventListener('click', function() { 
+        toDoorways();
+
+    });
+
  
 
