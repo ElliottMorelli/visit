@@ -81,12 +81,16 @@ function fadeIn() {
         } 
     }, 200); }
 
+if(window.location.href == "./index.html"){
     const enter = document.getElementById('enter');
     
     enter.addEventListener('click', function() { 
         window.location.href = "./doorways.html";
 
     });
+}
+
+    
 
 const security_no = document.getElementById('no_risk');
 const security_yes = document.getElementById('yes_risk');
